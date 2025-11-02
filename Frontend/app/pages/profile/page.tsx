@@ -1,9 +1,3 @@
-import React from 'react'
-
-const page = () => {
-  return (
-    <div>page</div>
-  )
+export default function Profile() {
+  return <div className="container mx-auto p-6">User Profile</div>;
 }
-
-export default page
