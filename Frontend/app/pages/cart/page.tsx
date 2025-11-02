@@ -118,7 +118,7 @@ export default function CartPage() {
 
                       {/* Price and Quantity */}
                       <div className="flex items-center justify-between mt-4">
-                        <div className="flex items-center gap-3 border border-gray-300 rounded-lg">
+                        <div className="flex items-center gap-3 border border-gray-300 rounded-lg text-gray-700">
                           <button
                             onClick={() => updateQuantity(item.id, -1)}
                             className="p-2 hover:bg-gray-50 transition"
@@ -145,7 +145,7 @@ export default function CartPage() {
 
             {/* Order Summary */}
             <div className="lg:col-span-1">
-              <div className="bg-white rounded-xl border border-gray-200 p-6 sticky top-24">
+              <div className="bg-white rounded-xl border border-gray-200 p-6 sticky top-24 text-gray-700">
                 <h2 className="font-bold text-xl mb-6">Order Summary</h2>
 
                 <div className="space-y-4 mb-6">

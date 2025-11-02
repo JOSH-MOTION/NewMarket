@@ -92,7 +92,7 @@ export default function OrdersPage() {
       });
 
   return (
-    <div className="ml-72 min-h-screen bg-gray-50">
+    <div className="w-full min-h-screen bg-gray-50">
       <div className="max-w-screen-xl mx-auto px-6 py-8">
         <h1 className="text-4xl font-bold text-gray-900 mb-8">My Orders</h1>
 

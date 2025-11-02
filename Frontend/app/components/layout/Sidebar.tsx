@@ -98,7 +98,7 @@ export default function Sidebar() {
                 className={`flex items-center gap-3 px-3 py-2 rounded-lg transition ${
                   isActive(link.href)
                     ? 'bg-orange-50 text-orange-700 font-medium'
-                    : 'text-gray-700 hover:bg-gray-50'
+                    : 'text-gray-700 hover:bg-[#f7d9b2]'
                 }`}
               >
                 <Icon className="w-5 h-5" />

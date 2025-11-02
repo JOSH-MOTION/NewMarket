@@ -46,7 +46,7 @@ export default function Navbar() {
           <div className="flex items-center gap-3">
             {/* Notifications */}
             <Link
-              href="/notifications"
+              href="/pages/notifications"
               className="p-2 hover:bg-gray-50 rounded-full transition relative"
             >
               <Bell className="w-6 h-6 text-gray-600" />
@@ -55,7 +55,7 @@ export default function Navbar() {
 
             {/* Cart */}
             <Link
-              href="/cart"
+              href="/pages/cart"
               className="p-2 hover:bg-gray-50 rounded-full transition relative"
             >
               <ShoppingCart className="w-6 h-6 text-gray-600" />
@@ -65,7 +65,7 @@ export default function Navbar() {
             </Link>
 
             {/* Profile */}
-            <Link href="/profile" className="w-10 h-10 rounded-full overflow-hidden">
+            <Link href="/pages/profile" className="w-10 h-10 rounded-full overflow-hidden">
               <img
                 src="https://api.dicebear.com/7.x/avataaars/svg?seed=User"
                 alt="Profile"
