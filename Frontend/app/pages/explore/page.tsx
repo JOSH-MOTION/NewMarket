@@ -41,7 +41,7 @@ export default function ExplorePage() {
   const categories = ['All', 'Electronics', 'Fashion', 'Home', 'Food', 'Beauty', 'Sports'];
 
   return (
-    <div className="ml-72 min-h-screen bg-gray-50">
+    <div className="w-full min-h-screen bg-gray-50">
       <div className="max-w-screen-xl mx-auto px-6 py-8">
         {/* Header */}
         <div className="mb-8">

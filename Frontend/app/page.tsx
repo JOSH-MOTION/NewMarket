@@ -69,7 +69,7 @@ export default function Home() {
   ];
 
   return (
-    <div className="ml-72">
+    <div className="w-full">
       {/* Hero Section */}
       <section className="bg-gradient-to-r from-orange-500 to-orange-600 text-white py-16 px-6">
         <div className="max-w-screen-xl mx-auto">

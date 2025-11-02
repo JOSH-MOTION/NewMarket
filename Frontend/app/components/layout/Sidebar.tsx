@@ -15,9 +15,10 @@ export default function Sidebar() {
     { href: '/pages/orders', icon: Package, label: 'Orders' },
   ];
 
-  const sellerLinks = [
-    { href: 'seller/dashboard', icon: LayoutDashboard, label: 'Seller Dashboard' },
-    { href: 'seller/add-product', icon: PlusCircle, label: 'Add Product' },
+ const sellerLinks = [
+    { href: '/seller/dashboard', icon: LayoutDashboard, label: 'Seller Dashboard' },
+    { href: '/seller/add-product', icon: PlusCircle, label: 'Add Product' },
+    { href: '/seller/orders', icon: Package, label: 'Seller Orders' },
   ];
 
   const contentLinks = [
@@ -27,14 +28,14 @@ export default function Sidebar() {
   const isActive = (href: string) => pathname === href;
 
   return (
-    <aside className="w-72 bg-white border-r border-gray-200 flex flex-col h-screen fixed left-0 top-0">
+    <aside className="w-72 bg-[#fff2e6] border-r border-gray-200 flex flex-col h-screen fixed left-0 top-0">
       {/* Logo */}
       <div className="p-6 border-b border-gray-200">
         <Link href="/" className="flex items-center gap-2 mb-6">
           <div className="w-8 h-8 bg-orange-600 rounded-lg flex items-center justify-center">
             <span className="text-white font-bold text-sm">🏠</span>
           </div>
-          <h1 className="font-bold text-xl">Local Market</h1>
+          <h1 className="font-bold text-xl text-black">Local Market</h1>
           <span className="px-2 py-0.5 bg-gray-100 text-gray-600 text-xs rounded">Beta</span>
         </Link>
 

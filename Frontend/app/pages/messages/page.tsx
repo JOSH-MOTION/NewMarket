@@ -52,75 +52,7 @@ export default function MessagesPage() {
 
   return (
     <div className="flex h-screen bg-gray-50">
-      {/* Sidebar */}
-      <aside className="w-72 bg-white border-r border-gray-200 flex flex-col">
-        <div className="p-6 border-b border-gray-200">
-          <div className="flex items-center gap-2 mb-6">
-            <div className="w-8 h-8 bg-orange-600 rounded-lg flex items-center justify-center">
-              <span className="text-white font-bold text-sm">🏠</span>
-            </div>
-            <h1 className="font-bold text-xl">Local Market</h1>
-            <span className="px-2 py-0.5 bg-gray-100 text-gray-600 text-xs rounded">Beta</span>
-          </div>
-
-          <nav className="space-y-1">
-            <a href="/" className="flex items-center gap-3 px-3 py-2 text-gray-700 hover:bg-gray-50 rounded-lg transition">
-              <span>🏠</span>
-              <span>Home</span>
-            </a>
-            <a href="/explore" className="flex items-center gap-3 px-3 py-2 text-gray-700 hover:bg-gray-50 rounded-lg transition">
-              <Search className="w-5 h-5" />
-              <span>Explore</span>
-            </a>
-            <a href="/cart" className="flex items-center gap-3 px-3 py-2 text-gray-700 hover:bg-gray-50 rounded-lg transition">
-              <span>🛒</span>
-              <span>Cart</span>
-            </a>
-            <a href="/messages" className="flex items-center gap-3 px-3 py-2 bg-orange-50 text-orange-700 rounded-lg">
-              <span>💬</span>
-              <span className="font-medium">Messages</span>
-            </a>
-            <a href="/orders" className="flex items-center gap-3 px-3 py-2 text-gray-700 hover:bg-gray-50 rounded-lg transition">
-              <span>📦</span>
-              <span>Orders</span>
-            </a>
-          </nav>
-        </div>
-
-        <div className="p-6 border-b border-gray-200">
-          <h3 className="text-xs font-semibold text-gray-500 uppercase mb-3">Selling</h3>
-          <nav className="space-y-1">
-            <a href="/dashboard" className="flex items-center gap-3 px-3 py-2 text-gray-700 hover:bg-gray-50 rounded-lg transition">
-              <span>📊</span>
-              <span>Seller Dashboard</span>
-            </a>
-            <a href="/add-product" className="flex items-center gap-3 px-3 py-2 text-gray-700 hover:bg-gray-50 rounded-lg transition">
-              <span>➕</span>
-              <span>Add Product</span>
-            </a>
-          </nav>
-        </div>
-
-        <div className="p-6">
-          <h3 className="text-xs font-semibold text-gray-500 uppercase mb-3">Content</h3>
-          <nav className="space-y-1">
-            <a href="/stories" className="flex items-center gap-3 px-3 py-2 text-gray-700 hover:bg-gray-50 rounded-lg transition">
-              <span>▶️</span>
-              <span>Product Stories</span>
-            </a>
-          </nav>
-        </div>
-
-        <div className="mt-auto p-6 space-y-3">
-          <button className="w-full px-4 py-3 bg-orange-600 text-white rounded-lg font-medium hover:bg-orange-700 transition">
-            Create Account
-          </button>
-          <button className="w-full px-4 py-3 text-gray-700 hover:bg-gray-50 rounded-lg transition flex items-center justify-center gap-2">
-            <span>👤</span>
-            <span>Sign In</span>
-          </button>
-        </div>
-      </aside>
+      
 
       {/* Main Content */}
       <div className="flex-1 flex">

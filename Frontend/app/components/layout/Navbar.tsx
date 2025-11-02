@@ -12,29 +12,35 @@ export default function Navbar() {
     <nav className="bg-white border-b border-gray-200 sticky top-0 z-50">
       <div className="max-w-screen-2xl mx-auto px-6 py-4">
         <div className="flex items-center gap-4">
-          {/* Location Selector */}
-          <button className="flex items-center gap-2 px-4 py-2 bg-gray-50 rounded-full hover:bg-gray-100 transition">
-            <MapPin className="w-4 h-4 text-gray-600" />
-            <span className="font-medium text-sm">{location}</span>
-          </button>
+       
 
-          {/* Search Bar */}
-          <div className="flex-1 relative">
-            <Search className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-gray-400" />
-            <input
-              type="text"
-              placeholder="Search products, sellers, categories"
-              value={searchQuery}
-              onChange={(e) => setSearchQuery(e.target.value)}
-              className="w-full pl-12 pr-4 py-3 bg-gray-50 border border-gray-200 rounded-full focus:outline-none focus:ring-2 focus:ring-orange-500 focus:bg-white"
-            />
-          </div>
+        {/* Search Bar */}
+<div className="flex-1 relative flex items-center gap-2 px-4 py-2 bg-[#fffdf9] border border-gray-200 rounded-full focus-within:ring-2 focus-within:ring-orange-500 focus-within:bg-white">
+  {/* Location Button */}
+  <button className="flex items-center gap-2 px-3 py-1.5 bg-[#fff2e6] rounded-full hover:bg-orange-100 transition text-black shrink-0">
+    <MapPin className="w-4 h-4 text-gray-600" />
+    <span className="font-medium text-sm">{location}</span>
+  </button>
 
-          {/* Filters Button */}
-          <button className="flex items-center gap-2 px-4 py-2 bg-gray-50 rounded-full hover:bg-gray-100 transition">
-            <SlidersHorizontal className="w-4 h-4 text-gray-600" />
-            <span className="font-medium text-sm">Filters</span>
-          </button>
+  {/* Search Icon */}
+  <Search className="w-5 h-5 text-gray-400 shrink-0" />
+
+  {/* Search Input */}
+  <input
+    type="text"
+    placeholder="Search products, sellers, categories"
+    value={searchQuery}
+    onChange={(e) => setSearchQuery(e.target.value)}
+    className="flex-1 bg-transparent border-none outline-none focus:outline-none px-2 "
+  />
+
+  {/* Filters Button */}
+  <button className="flex items-center gap-2 px-10 py-1.5 bg-[#fff2e6] rounded-full hover:bg-gray-100 transition shrink-0 text-gray-700">
+    <SlidersHorizontal className="w-4 h-4 text-gray-600" />
+    <span className="font-medium text-sm">Filters</span>
+  </button>
+</div>
+          
 
           {/* Action Icons */}
           <div className="flex items-center gap-3">
