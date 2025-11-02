@@ -1,9 +1,3 @@
-import React from 'react'
-
-const page = () => {
-  return (
-    <div>page</div>
-  )
+export default function AddProduct() {
+  return <div className="p-6">Add New Product Form</div>;
 }
-
-export default page

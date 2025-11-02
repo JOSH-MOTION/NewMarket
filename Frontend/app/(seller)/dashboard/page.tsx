@@ -1,9 +1,3 @@
-import React from 'react'
-
-const page = () => {
-  return (
-    <div>page</div>
-  )
+export default function SellerDashboard() {
+  return <div className="p-6">Seller Dashboard - Overview, Sales, Orders</div>;
 }
-
-export default page
