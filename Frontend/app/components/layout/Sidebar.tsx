@@ -10,14 +10,14 @@ export default function Sidebar() {
   const navLinks = [
     { href: '/', icon: Home, label: 'Home' },
     { href: '/pages/explore', icon: Search, label: 'Explore' },
-    { href: '/cart', icon: ShoppingCart, label: 'Cart' },
-    { href: '/messages', icon: MessageCircle, label: 'Messages' },
-    { href: '/orders', icon: Package, label: 'Orders' },
+    { href: '/pages/cart', icon: ShoppingCart, label: 'Cart' },
+    { href: '/pages/messages', icon: MessageCircle, label: 'Messages' },
+    { href: '/pages/orders', icon: Package, label: 'Orders' },
   ];
 
   const sellerLinks = [
-    { href: '/dashboard', icon: LayoutDashboard, label: 'Seller Dashboard' },
-    { href: '/add-product', icon: PlusCircle, label: 'Add Product' },
+    { href: 'seller/dashboard', icon: LayoutDashboard, label: 'Seller Dashboard' },
+    { href: 'seller/add-product', icon: PlusCircle, label: 'Add Product' },
   ];
 
   const contentLinks = [
