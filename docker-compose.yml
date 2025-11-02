@@ -1,0 +1,38 @@
+version: '3.8'
+
+services:
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+    environment:
+      - NEXT_PUBLIC_API_URL=http://backend:5000/api
+    depends_on:
+      - backend
+
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    ports:
+      - "5000:5000"
+    environment:
+      - NODE_ENV=development
+      - MONGO_URI=mongodb://mongo:27017/localmarketplace
+      - JWT_SECRET=your_jwt_secret_here
+      - PAYSTACK_SECRET_KEY=sk_test_xxx
+      - FLUTTERWAVE_SECRET_KEY=FLWSECK_TEST-xxx
+    depends_on:
+      - mongo
+
+  mongo:
+    image: mongo:6
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongo-data:/data/db
+
+volumes:
+  mongo-data:
